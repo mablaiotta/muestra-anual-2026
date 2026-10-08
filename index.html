@@ -186,7 +186,8 @@
     margin-bottom: 6px;
     display: flex;
     flex-wrap: wrap; /* Permite que baje de línea en celulares chicos */
-    gap: 5px;
+    align-items: baseline;
+    gap: 8px;
   }
   .obra .linea .etiqueta {
     font-weight: 600;
@@ -194,7 +195,8 @@
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 0.5px;
-    min-width: 75px;
+    min-width: 95px; /* Ajustado para que EN ESCENA: no desplace la columna */
+    flex-shrink: 0;
   }
   .obra .linea .valor {
     flex: 1;
@@ -365,7 +367,7 @@
   <div class="parte-titulo">Segunda Parte</div>
 
   <div class="obra">
-    <div class="titulo">5. Inventario de urdimbres</div>
+    <div class="titulo">5. Inventario de urdimbres <span style="font-size:14px; font-weight:400;">(Trabajo en proceso)</span></div>
     <div class="linea"><span class="etiqueta">Cátedra:</span><span class="valor">Técnicas de Improvisación y Composición</span></div>
     <div class="linea"><span class="etiqueta">Carrera:</span><span class="valor">FOBA Danza Expresión Corporal</span></div>
     <div class="linea"><span class="etiqueta">Docente:</span><span class="valor">Paula Ceci</span></div>
@@ -381,15 +383,17 @@
   </div>
 
   <div class="obra">
-    <div class="titulo">7. Cartas al mundo</div>
-    <div class="linea"><span class="etiqueta">Cátedra:</span><span class="valor">Ensayo de Composición Instantánea</span></div>
+    <div class="titulo">7. Cartas al mundo <span style="font-size:14px; font-weight:400;">(texto de Victorina Luque)</span></div>
+    <div class="linea"><span class="etiqueta">Cátedra:</span><span class="valor">Movimiento</span></div>
+    <div class="linea"><span class="etiqueta">Carrera:</span><span class="valor">FOBA Teatro</span></div>
     <div class="linea"><span class="etiqueta">Docente:</span><span class="valor">María Corina Markart</span></div>
     <div class="linea"><span class="etiqueta">En escena:</span><span class="valor">Victorina Luque, Clara Lemos Piegari, Athina Díaz Franco, Martín Amado.</span></div>
   </div>
 
   <div class="obra">
-    <div class="titulo">8. Lamentación versión libre</div>
-    <div class="linea"><span class="etiqueta">A partir de:</span><span class="valor">la obra de Martha Graham</span></div>
+    <div class="titulo">8. Lamentación <span style="font-size:14px; font-weight:400;">(versión libre a partir de la obra de Martha Graham)</span></div>
+    <div class="linea"><span class="etiqueta">Cátedra:</span><span class="valor">Entrenamiento Corporal 3</span></div>
+    <div class="linea"><span class="etiqueta">Carrera:</span><span class="valor">Profesorado de Danza Expresión Corporal</span></div>
     <div class="linea"><span class="etiqueta">Docentes:</span><span class="valor">María Luisa Fernández · María Corina Markart</span></div>
     <div class="linea"><span class="etiqueta">En escena:</span><span class="valor">Valeria Fernández, Valentina Rinque, Josefina Correa, Soledad Giordano, Carolina Rodríguez.</span></div>
   </div>
@@ -399,7 +403,8 @@
     <div class="linea"><span class="etiqueta">Cátedra:</span><span class="valor">Práctica Escénica</span></div>
     <div class="linea"><span class="etiqueta">Carrera:</span><span class="valor">Profesorado de Teatro</span></div>
     <div class="linea"><span class="etiqueta">Docente:</span><span class="valor">Viviana Blaiotta</span></div>
-    <div class="linea"><span class="etiqueta">En escena:</span><span class="valor">Pamela Loza Rego, Delfina Quiroga, Antonela Gatti.</span></div>
+    <div class="linea"><span class="etiqueta">Dirección:</span><span class="valor">Pamela Loza Rego</span></div>
+    <div class="linea"><span class="etiqueta">En escena:</span><span class="valor">Delfina Quiroga, Antonela Gatti.</span></div>
   </div>
 
   <img class="logo-pie" src="logo.png" alt="Logo">
